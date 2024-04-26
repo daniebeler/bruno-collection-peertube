@@ -1,0 +1,18 @@
+meta {
+  name: Import videos in channel
+  type: http
+  seq: 11
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/video-channels/{channelHandle}/import-videos
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "externalChannelUrl": "",
+    "videoChannelSyncId": ""
+  }
+}

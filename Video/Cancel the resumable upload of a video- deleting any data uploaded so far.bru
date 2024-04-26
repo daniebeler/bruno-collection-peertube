@@ -1,0 +1,15 @@
+meta {
+  name: Cancel the resumable upload of a video- deleting any data uploaded so far
+  type: http
+  seq: 16
+}
+
+delete {
+  url: https://peertube2.cpy.re/api/v1/videos/upload-resumable
+  body: none
+  auth: none
+}
+
+headers {
+  Content-Length: 
+}

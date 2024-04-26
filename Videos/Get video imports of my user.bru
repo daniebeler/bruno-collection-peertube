@@ -1,0 +1,17 @@
+meta {
+  name: Get video imports of my user
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://peertube2.cpy.re/api/v1/users/me/videos/imports
+  body: none
+  auth: none
+}
+
+query {
+  ~targetUrl: 
+  ~videoChannelSyncId: 
+  ~search: 
+}

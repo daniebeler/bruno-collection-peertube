@@ -1,0 +1,17 @@
+meta {
+  name: List available plugins
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://peertube2.cpy.re/api/v1/plugins/available
+  body: none
+  auth: none
+}
+
+query {
+  ~search: 
+  ~pluginType: 
+  ~currentPeerTubeEngine: 
+}

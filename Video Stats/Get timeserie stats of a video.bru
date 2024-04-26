@@ -1,0 +1,16 @@
+meta {
+  name: Get timeserie stats of a video
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://peertube2.cpy.re/api/v1/videos/{id}/stats/timeseries/{metric}
+  body: none
+  auth: none
+}
+
+query {
+  ~startDate: 
+  ~endDate: 
+}

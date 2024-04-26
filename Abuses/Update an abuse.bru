@@ -1,0 +1,18 @@
+meta {
+  name: Update an abuse
+  type: http
+  seq: 4
+}
+
+put {
+  url: https://peertube2.cpy.re/api/v1/abuses/{abuseId}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "state": "",
+    "moderationComment": ""
+  }
+}

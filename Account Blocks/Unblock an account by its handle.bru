@@ -1,0 +1,11 @@
+meta {
+  name: Unblock an account by its handle
+  type: http
+  seq: 4
+}
+
+delete {
+  url: https://peertube2.cpy.re/api/v1/server/blocklist/accounts/{accountName}
+  body: none
+  auth: none
+}

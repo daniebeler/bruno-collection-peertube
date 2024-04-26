@@ -1,0 +1,11 @@
+meta {
+  name: Get rate of my user for a video
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://peertube2.cpy.re/api/v1/users/me/videos/{videoId}/rating
+  body: none
+  auth: none
+}

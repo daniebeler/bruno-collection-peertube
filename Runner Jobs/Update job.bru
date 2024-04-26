@@ -1,0 +1,20 @@
+meta {
+  name: Update job
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/runners/jobs/{jobUUID}/update
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "runnerToken": "",
+    "jobToken": "",
+    "progress": "",
+    "payload": ""
+  }
+}

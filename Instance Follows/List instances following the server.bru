@@ -1,0 +1,16 @@
+meta {
+  name: List instances following the server
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://peertube2.cpy.re/api/v1/server/followers
+  body: none
+  auth: none
+}
+
+query {
+  ~state: 
+  ~actorType: 
+}

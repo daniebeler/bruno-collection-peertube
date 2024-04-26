@@ -1,0 +1,11 @@
+meta {
+  name: Unblock a server by its domain
+  type: http
+  seq: 3
+}
+
+delete {
+  url: https://peertube2.cpy.re/api/v1/server/blocklist/servers/{host}
+  body: none
+  auth: none
+}

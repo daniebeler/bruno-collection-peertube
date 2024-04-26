@@ -1,0 +1,15 @@
+meta {
+  name: Get private Web Video file
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://peertube2.cpy.re/static/web-videos/private/{filename}
+  body: none
+  auth: none
+}
+
+query {
+  ~videoFileToken: 
+}

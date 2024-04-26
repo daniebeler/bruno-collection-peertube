@@ -1,0 +1,11 @@
+meta {
+  name: Get latest user import
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://peertube2.cpy.re/api/v1/users/{userId}/imports/latest
+  body: none
+  auth: none
+}

@@ -1,0 +1,18 @@
+meta {
+  name: Confirm two factor auth
+  type: http
+  seq: 9
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/users/{id}/two-factor/confirm-request
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "requestToken": "",
+    "otpToken": ""
+  }
+}

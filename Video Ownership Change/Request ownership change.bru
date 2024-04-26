@@ -1,0 +1,15 @@
+meta {
+  name: Request ownership change
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/videos/{id}/give-ownership
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  username: 
+}

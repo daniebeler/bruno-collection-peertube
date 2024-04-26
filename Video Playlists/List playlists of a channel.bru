@@ -1,0 +1,15 @@
+meta {
+  name: List playlists of a channel
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://peertube2.cpy.re/api/v1/video-channels/{channelHandle}/video-playlists
+  body: none
+  auth: none
+}
+
+query {
+  ~playlistType: 
+}

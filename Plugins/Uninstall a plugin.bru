@@ -1,0 +1,17 @@
+meta {
+  name: Uninstall a plugin
+  type: http
+  seq: 5
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/plugins/uninstall
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "npmName": ""
+  }
+}

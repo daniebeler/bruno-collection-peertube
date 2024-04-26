@@ -1,0 +1,18 @@
+meta {
+  name: Accept registration
+  type: http
+  seq: 5
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/users/registrations/{registrationId}/accept
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "moderationResponse": "",
+    "preventEmailDelivery": ""
+  }
+}

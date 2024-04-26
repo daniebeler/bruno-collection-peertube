@@ -1,0 +1,15 @@
+meta {
+  name: List ratings of an account
+  type: http
+  seq: 5
+}
+
+get {
+  url: https://peertube2.cpy.re/api/v1/accounts/{name}/ratings
+  body: none
+  auth: none
+}
+
+query {
+  ~rating: 
+}

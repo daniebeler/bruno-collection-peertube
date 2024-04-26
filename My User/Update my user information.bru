@@ -1,0 +1,11 @@
+meta {
+  name: Update my user information
+  type: http
+  seq: 2
+}
+
+put {
+  url: https://peertube2.cpy.re/api/v1/users/me
+  body: json
+  auth: none
+}

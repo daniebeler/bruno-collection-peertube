@@ -1,0 +1,15 @@
+meta {
+  name: Update my user avatar
+  type: http
+  seq: 6
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/users/me/avatar/pick
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  avatarfile: 
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Remove registration token
+  type: http
+  seq: 2
+}
+
+delete {
+  url: https://peertube2.cpy.re/api/v1/runners/registration-tokens/{registrationTokenId}
+  body: none
+  auth: none
+}

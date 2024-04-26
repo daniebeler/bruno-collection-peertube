@@ -1,0 +1,18 @@
+meta {
+  name: Verify a user
+  type: http
+  seq: 7
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/users/{id}/verify-email
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "verificationString": "",
+    "isPendingEmail": ""
+  }
+}

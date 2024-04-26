@@ -1,0 +1,15 @@
+meta {
+  name: Check video exists in my playlists
+  type: http
+  seq: 11
+}
+
+get {
+  url: https://peertube2.cpy.re/api/v1/users/me/video-playlists/videos-exist
+  body: none
+  auth: none
+}
+
+query {
+  videoIds: 
+}

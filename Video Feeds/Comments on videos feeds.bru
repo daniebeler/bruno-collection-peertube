@@ -1,0 +1,19 @@
+meta {
+  name: Comments on videos feeds
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://peertube2.cpy.re/feeds/video-comments.{format}
+  body: none
+  auth: none
+}
+
+query {
+  ~videoId: 
+  ~accountId: 
+  ~accountName: 
+  ~videoChannelId: 
+  ~videoChannelName: 
+}

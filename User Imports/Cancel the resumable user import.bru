@@ -1,0 +1,15 @@
+meta {
+  name: Cancel the resumable user import
+  type: http
+  seq: 3
+}
+
+delete {
+  url: https://peertube2.cpy.re/api/v1/users/{userId}/imports/import-resumable
+  body: none
+  auth: none
+}
+
+headers {
+  Content-Length: 
+}

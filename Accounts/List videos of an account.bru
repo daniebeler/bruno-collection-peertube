@@ -1,0 +1,25 @@
+meta {
+  name: List videos of an account
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://peertube2.cpy.re/api/v1/accounts/{name}/videos
+  body: none
+  auth: none
+}
+
+query {
+  ~categoryOneOf: 
+  ~isLive: 
+  ~tagsOneOf: 
+  ~tagsAllOf: 
+  ~licenceOneOf: 
+  ~languageOneOf: 
+  ~skipCount: 
+  ~start: 
+  ~count: 
+  ~sort: 
+  ~excludeAlreadyWatched: 
+}

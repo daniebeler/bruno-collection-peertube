@@ -1,0 +1,15 @@
+meta {
+  name: Get private HLS video file
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://peertube2.cpy.re/static/streaming-playlists/hls/private/{filename}
+  body: none
+  auth: none
+}
+
+query {
+  ~reinjectVideoFileToken: 
+}

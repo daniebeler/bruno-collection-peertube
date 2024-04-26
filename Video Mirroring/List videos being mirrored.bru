@@ -1,0 +1,16 @@
+meta {
+  name: List videos being mirrored
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://peertube2.cpy.re/api/v1/server/redundancy/videos
+  body: none
+  auth: none
+}
+
+query {
+  target: 
+  ~sort: 
+}

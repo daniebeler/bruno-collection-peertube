@@ -1,0 +1,16 @@
+meta {
+  name: List plugins
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://peertube2.cpy.re/api/v1/plugins
+  body: none
+  auth: none
+}
+
+query {
+  ~pluginType: 
+  ~uninstalled: 
+}

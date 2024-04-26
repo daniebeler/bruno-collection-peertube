@@ -1,0 +1,17 @@
+meta {
+  name: Disable two factor auth
+  type: http
+  seq: 10
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/users/{id}/two-factor/disable
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "currentPassword": ""
+  }
+}

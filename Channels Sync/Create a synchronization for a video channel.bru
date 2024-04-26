@@ -1,0 +1,18 @@
+meta {
+  name: Create a synchronization for a video channel
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/video-channel-syncs
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "externalChannelUrl": "",
+    "videoChannelId": ""
+  }
+}

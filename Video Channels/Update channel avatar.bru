@@ -1,0 +1,15 @@
+meta {
+  name: Update channel avatar
+  type: http
+  seq: 7
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/video-channels/{channelHandle}/avatar/pick
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  avatarfile: 
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Common videos feeds
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://peertube2.cpy.re/feeds/videos.{format}
+  body: none
+  auth: none
+}
+
+query {
+  ~accountId: 
+  ~accountName: 
+  ~videoChannelId: 
+  ~videoChannelName: 
+  ~sort: 
+  ~nsfw: 
+  ~isLocal: 
+  ~include: 
+  ~privacyOneOf: 
+  ~hasHLSFiles: 
+  ~hasWebVideoFiles: 
+}

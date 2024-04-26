@@ -1,0 +1,16 @@
+meta {
+  name: Get block status of accounts-hosts
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://peertube2.cpy.re/api/v1/blocklist/status
+  body: none
+  auth: none
+}
+
+query {
+  ~accounts: 
+  ~hosts: 
+}

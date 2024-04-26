@@ -1,0 +1,17 @@
+meta {
+  name: Request a new job
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/runners/jobs/request
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "runnerToken": ""
+  }
+}

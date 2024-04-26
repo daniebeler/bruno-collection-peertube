@@ -1,0 +1,15 @@
+meta {
+  name: Get a user
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://peertube2.cpy.re/api/v1/users/{id}
+  body: none
+  auth: none
+}
+
+query {
+  ~withStats: 
+}

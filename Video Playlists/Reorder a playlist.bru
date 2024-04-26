@@ -1,0 +1,19 @@
+meta {
+  name: Reorder a playlist
+  type: http
+  seq: 8
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/video-playlists/{playlistId}/videos/reorder
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "startPosition": "",
+    "insertAfterPosition": "",
+    "reorderLength": ""
+  }
+}

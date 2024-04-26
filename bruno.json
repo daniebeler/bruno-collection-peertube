@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "PeerTube",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

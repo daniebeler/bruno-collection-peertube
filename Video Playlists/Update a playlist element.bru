@@ -1,0 +1,18 @@
+meta {
+  name: Update a playlist element
+  type: http
+  seq: 9
+}
+
+put {
+  url: https://peertube2.cpy.re/api/v1/video-playlists/{playlistId}/videos/{playlistElementId}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "startTimestamp": "",
+    "stopTimestamp": ""
+  }
+}

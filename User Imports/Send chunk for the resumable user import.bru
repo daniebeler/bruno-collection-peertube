@@ -1,0 +1,20 @@
+meta {
+  name: Send chunk for the resumable user import
+  type: http
+  seq: 2
+}
+
+put {
+  url: https://peertube2.cpy.re/api/v1/users/{userId}/imports/import-resumable
+  body: none
+  auth: none
+}
+
+query {
+  upload_id: 
+}
+
+headers {
+  Content-Range: 
+  Content-Length: 
+}

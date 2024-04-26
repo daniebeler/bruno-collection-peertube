@@ -1,0 +1,11 @@
+meta {
+  name: Unfollow an actor -PeerTube instance- channel or account-
+  type: http
+  seq: 7
+}
+
+delete {
+  url: https://peertube2.cpy.re/api/v1/server/following/{hostOrHandle}
+  body: none
+  auth: none
+}

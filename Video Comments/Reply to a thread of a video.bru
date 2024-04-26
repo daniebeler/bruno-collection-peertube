@@ -1,0 +1,17 @@
+meta {
+  name: Reply to a thread of a video
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/videos/{id}/comments/{commentId}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "text": ""
+  }
+}

@@ -1,0 +1,18 @@
+meta {
+  name: Follow a list of actors -PeerTube instance- channel or account-
+  type: http
+  seq: 6
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/server/following
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "hosts": [],
+    "handles": []
+  }
+}

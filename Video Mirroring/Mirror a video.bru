@@ -1,0 +1,17 @@
+meta {
+  name: Mirror a video
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/server/redundancy/videos
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "videoId": ""
+  }
+}

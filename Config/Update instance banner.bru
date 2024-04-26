@@ -1,0 +1,15 @@
+meta {
+  name: Update instance banner
+  type: http
+  seq: 6
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/config/instance-banner/pick
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  bannerfile: 
+}

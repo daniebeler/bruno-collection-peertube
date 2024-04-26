@@ -1,0 +1,28 @@
+meta {
+  name: Update my notification settings
+  type: http
+  seq: 4
+}
+
+put {
+  url: https://peertube2.cpy.re/api/v1/users/me/notification-settings
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "newVideoFromSubscription": "",
+    "newCommentOnMyVideo": "",
+    "abuseAsModerator": "",
+    "videoAutoBlacklistAsModerator": "",
+    "blacklistOnMyVideo": "",
+    "myVideoPublished": "",
+    "myVideoImportFinished": "",
+    "newFollow": "",
+    "newUserRegistration": "",
+    "commentMention": "",
+    "newInstanceFollower": "",
+    "autoInstanceFollowing": ""
+  }
+}

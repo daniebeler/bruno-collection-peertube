@@ -1,0 +1,17 @@
+meta {
+  name: Like-dislike a video
+  type: http
+  seq: 1
+}
+
+put {
+  url: https://peertube2.cpy.re/api/v1/videos/{id}/rate
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "rating": ""
+  }
+}

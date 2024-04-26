@@ -1,0 +1,17 @@
+meta {
+  name: Unregister a runner
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/runners/unregister
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "runnerToken": ""
+  }
+}

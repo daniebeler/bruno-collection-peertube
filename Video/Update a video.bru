@@ -1,0 +1,31 @@
+meta {
+  name: Update a video
+  type: http
+  seq: 7
+}
+
+put {
+  url: https://peertube2.cpy.re/api/v1/videos/{id}
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  thumbnailfile: 
+  previewfile: 
+  category: 
+  licence: 
+  language: 
+  privacy: 
+  description: 
+  waitTranscoding: 
+  support: 
+  nsfw: 
+  name: 
+  tags: 
+  commentsEnabled: 
+  downloadEnabled: 
+  originallyPublishedAt: 
+  scheduleUpdate: 
+  videoPasswords: 
+}

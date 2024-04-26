@@ -1,0 +1,24 @@
+meta {
+  name: Search videos
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://peertube2.cpy.re/api/v1/search/videos
+  body: none
+  auth: none
+}
+
+query {
+  search: 
+  ~uuids: 
+  ~searchTarget: 
+  ~sort: 
+  ~startDate: 
+  ~endDate: 
+  ~originallyPublishedStartDate: 
+  ~originallyPublishedEndDate: 
+  ~durationMin: 
+  ~durationMax: 
+}

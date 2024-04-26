@@ -1,0 +1,19 @@
+meta {
+  name: Add a video in a playlist
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/video-playlists/{playlistId}/videos
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "videoId": "",
+    "startTimestamp": "",
+    "stopTimestamp": ""
+  }
+}

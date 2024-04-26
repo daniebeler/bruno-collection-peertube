@@ -1,0 +1,18 @@
+meta {
+  name: Create a transcoding job
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://peertube2.cpy.re/api/v1/videos/{id}/transcoding
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "transcodingType": "",
+    "forceTranscoding": ""
+  }
+}
